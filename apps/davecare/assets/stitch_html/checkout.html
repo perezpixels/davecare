@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#3f4945", "tertiary-fixed": "#cce5ff", "on-primary-fixed-variant": "#005142", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-error-container": "#93000a", "on-tertiary-container": "#8bc9ff", "inverse-primary": "#90d4c0", "tertiary-fixed-dim": "#93ccff", "surface-variant": "#dae2fd", "primary-fixed": "#abf0dc", "primary-fixed-dim": "#90d4c0", "tertiary-container": "#005582", "inverse-on-surface": "#eef0ff", "surface-tint": "#23695a", "surface-container-highest": "#dae2fd", "primary": "#004236", "surface-container-high": "#e2e7ff", "on-secondary-container": "#12715e", "surface-container-low": "#f2f3ff", "tertiary": "#003d5f", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005142", "primary-container": "#0f5b4c", "surface-dim": "#d2d9f4", "on-primary-container": "#8dd0bd", "secondary-container": "#9ff3db", "on-tertiary-fixed-variant": "#004b73", "on-surface": "#131b2e", "background": "#faf8ff", "secondary-fixed": "#9ff3db", "outline-variant": "#bfc9c4", "on-primary-fixed": "#002019", "on-tertiary": "#ffffff", "surface": "#faf8ff", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary": "#046b58", "on-secondary-fixed": "#002019", "outline": "#6f7975", "surface-container": "#eaedff", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#83d6bf", "inverse-surface": "#283044", "on-primary": "#ffffff", "on-tertiary-fixed": "#001d31" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-lg": "2rem", "space-xl": "2rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-md": "1.5rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "currency-display": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "currency-display": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #0f5b4c
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpb0YKM7yGbD2e9E2yZ05J-qB9vqcGluG2TZDJtZsNh_bvPyQxTMe0ojzX5aIOxgdV-r3YgL6WkPr8Sy6b5RibXf-QqdY4KYD2LYm4NcJg5By0zkJBL0SMAkydZUrxk7oC8-nwRQNco8Gn1h96Aj4WQkFRPmVW4VmsWUyKGmz1XJABS7ww3H5EGkj1lUht4KyzzVtFgiJmuleHaPJxyA1eS1HWOUPU1OnlZcowGuwSUlGLbxSTtXTUdgo"/><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Checkout & Payment</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors relative"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><div class="relative flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VYxr8o8rvbvHniF2q1PW49OMdxDDTO15sH7fKcSqj8ttfaeasGySi6tLZ9RpmBP9sVdoT6dqsAkZXwIS8N_ZSr3Py7L3gXFmYrVKpDBcVCIc8E3Gv6ZTbi69S-Y6llqyje3xE8zAvWphLUs_r7sdx_b0F0LPftPlz7sepDdZDaTRZmKtxWvuScBBTnSy8sO8qaMcaPZwJFp9zqKcZnshgrWlHYIeAPpjRAppBet6axsFCClHUIj24DRM8"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen pb-safe"><div class="flex flex-col w-full pb-10">
+<!-- Top Order Tracker Pill & Warm Clinical Banner -->
+<div class="px-margin pt-4 pb-2">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          Step 2 of 3 • Final Verification
+        </span>
+<span class="font-label-sm text-label-sm text-outline">Order #GH-9082</span>
+</div>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Review & Instant Pay</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Community prescription order ready for local fulfillment.</p>
+</div>
+</div>
+<!-- Pharmacist Assurance Badge (Prominent Warmth) -->
+<div class="px-margin py-2">
+<div class="bg-primary-fixed rounded-xl p-space-md shadow-sm flex items-center gap-3">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Warm portrait photograph of Ghanaian clinical pharmacist David Mensah smiling warmly wearing white lab coat and stethoscope around neck in bright modern Accra clinic setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk0HmUN9Oo5tcpAHvjKFX2pLCgOwagIF5O-B9GcQ6H08rtwB3Zu3cdspCIxRxmLem72-ZfkndxAkKVo3jplN1HNl8jbwY3VAB7TaNl2Qpff0b2tTjyde0FuKUc2kwLVBTIWXGQlxFhVaa3vueOK6hqnhI-lbelD8g2hM6bhuFhXrEG5ehetKO8HbWeJBc7t3blHtczf65_syL9UsS8rO_YbMsKzFYQQw5rF2FEDQM-XOKWpB1CjTKj"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1">
+<span class="font-label-lg text-label-lg text-on-primary-fixed truncate">Pharm. David Mensah</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-fixed-variant leading-tight">Reviewed & certified • GPhC Reg #P-11082</p>
+<span class="inline-block font-label-sm text-label-sm text-primary font-medium mt-0.5">Dispensing safe • FDA Ghana compliant</span>
+</div>
+</div>
+</div>
+<!-- Prescription & Cart Items Section -->
+<div class="px-margin mt-3">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-label-lg text-label-lg text-on-surface">Medications in Bag (3)</h2>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+        Rx Verified
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-3">
+<!-- Item 1: Prescription Med -->
+<div class="flex items-start justify-between gap-2 pb-3 bg-surface-container-low/50 rounded-lg p-2.5">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">prescriptions</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface">Amoxicillin 500mg</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Rx #DC-1042</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">21 capsules • 1 cap tid × 7 days</p>
+<span class="text-secondary font-label-sm text-label-sm flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Approved for pickup
+            </span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface shrink-0">GH₵ 45.00</span>
+</div>
+<!-- Item 2: OTC Med -->
+<div class="flex items-start justify-between gap-2 p-2">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">medication</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Ibuprofen 400mg</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">10 film-coated tablets</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface shrink-0">GH₵ 35.00</span>
+</div>
+<!-- Item 3: Extra OTC Med -->
+<div class="flex items-start justify-between gap-2 p-2">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">healing</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Paracetamol Extra 500mg</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rapid relief caplets</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface shrink-0">GH₵ 35.00</span>
+</div>
+</div>
+</div>
+<!-- Fulfillment Switcher -->
+<div class="px-margin mt-5">
+<label class="font-label-lg text-label-lg text-on-surface block mb-2">Fulfillment Method</label>
+<!-- Segmented Tab Bar -->
+<div class="bg-surface-container rounded-xl p-1 grid grid-cols-2 gap-1 mb-3">
+<button class="flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm transition-all text-center" id="btn-tab-pickup" onclick="setFulfillment('pickup')">
+<span class="font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+          Counter Pickup
+        </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Free • Instant</span>
+</button>
+<button class="flex flex-col items-center justify-center py-2.5 px-2 rounded-lg text-on-surface-variant transition-all text-center" id="btn-tab-delivery" onclick="setFulfillment('delivery')">
+<span class="font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">two_wheeler</span>
+          Express Motorbike
+        </span>
+<span class="font-label-sm text-label-sm text-outline">GH₵ 15.00 • 45 mins</span>
+</button>
+</div>
+<!-- Fulfillment Panel 1: Counter Pickup (Default Active) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm" id="panel-pickup">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_pharmacy</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<p class="font-label-lg text-label-lg text-on-surface">DavidCare Pharmacy • East Legon</p>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Ready in 20m</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Plot 14, Boundary Road, East Legon, Accra</p>
+<div class="mt-2.5 p-2 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">pin</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pickup PIN Code:</span>
+</div>
+<span class="font-currency-display text-currency-display tracking-widest text-primary">4892</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline mt-1.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">info</span> Show this PIN at the counter to collect.
+          </p>
+</div>
+</div>
+</div>
+<!-- Fulfillment Panel 2: Motorbike Delivery (Hidden by default) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-3" id="panel-delivery">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">pin_drop</span>
+<span class="font-label-lg text-label-lg text-on-surface">GhanaPost GPS Digital Address</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Verified
+        </span>
+</div>
+<div class="p-3 bg-surface-container-low rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-currency-display text-currency-display tracking-wide text-primary">GA-492-1204</span>
+<button class="text-secondary font-label-sm text-label-sm flex items-center gap-0.5 hover:underline" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span> Change
+          </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium mt-1">East Legon, Accra</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+          Landmark: Near American House, opposite Shell Station
+        </p>
+</div>
+<!-- Quick Delivery Map Visual Placeholder -->
+<div class="w-full h-24 bg-cover bg-center rounded-lg relative overflow-hidden shadow-inner" data-location="East Legon, Accra, Ghana" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCU8yTn1XXf9zGeQEIKt4Qp4nJVXG4ZkjezEFUvszMYPTI8BE3BxMvMPAYrtntTnzF2aqNjgSnnr1YuvU1cpeLqZCCv34w_4OYUri8uADuiZn11A51e_bhCk-hj6p3a9NqwKmDYbz49Qmfoytj2vPbxzy-kPNnuCBv0zNLYCMHCUXG0TFthQeTtrUOvbo91wwp5V87I6GykVXun5WO4B4hAEwyGu-HgIY0DBuaOfiG3pEiBV759d-2Q')">
+<div class="absolute inset-0 bg-primary-container/20 flex items-end p-2">
+<span class="bg-surface-container-lowest/90 px-2 py-1 rounded font-label-sm text-label-sm text-on-surface backdrop-blur-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Live dispatch corridor active
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Selection -->
+<div class="px-margin mt-5">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-lg text-label-lg text-on-surface">Payment Method</label>
+<span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">shield</span> Encrypted
+      </span>
+</div>
+<div class="space-y-2.5">
+<!-- Option 1: Mobile Money (Selected) -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all ring-2 ring-primary" id="method-momo" onclick="selectPayment('momo')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">contactless</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface">Mobile Money</span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Instant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MTN MoMo • Telecel Cash • AT Money</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[15px]">done</span>
+</div>
+</div>
+<!-- MNO Network Badges -->
+<div class="mt-3 pt-3 flex items-center gap-2 bg-surface-container-low p-2 rounded-lg">
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+<span class="font-label-sm text-label-sm text-on-surface">MTN MoMo</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest shadow-sm opacity-60">
+<span class="w-2.5 h-2.5 rounded-full bg-red-600"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Telecel Cash</span>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest shadow-sm opacity-60">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+<span class="font-label-sm text-label-sm text-on-surface">AT Money</span>
+</div>
+</div>
+<!-- Prompt Preview Box -->
+<div class="mt-2 flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[17px] text-primary">smartphone</span>
+<span class="font-body-sm text-body-sm leading-snug">Instant USSD prompt sent to <strong>024 498 0122</strong></span>
+</div>
+</div>
+<!-- Option 2: Bank Card -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all flex items-center justify-between" id="method-card" onclick="selectPayment('card')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Debit / Credit Card</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Visa • Mastercard • Gh-Link</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center"></div>
+</div>
+<!-- Option 3: Cash at Counter -->
+<div class="cursor-pointer bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-all flex items-center justify-between" id="method-cash" onclick="selectPayment('cash')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">Cash at Counter</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pay in person upon collection</p>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center"></div>
+</div>
+</div>
+</div>
+<!-- Cost Breakdown Card -->
+<div class="px-margin mt-5">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-2.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md">Items Subtotal (3 medicines)</span>
+<span class="font-label-lg text-label-lg text-on-surface">GH₵ 115.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md flex items-center gap-1">
+          Fulfillment Fee
+          <span class="font-label-sm text-label-sm text-outline" id="label-fulfillment-mode">(Pickup)</span>
+</span>
+<span class="font-label-lg text-label-lg text-secondary" id="cost-delivery">GH₵ 0.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md">Clinical Packaging & Labeling</span>
+<span class="font-label-lg text-label-lg text-secondary">Complimentary</span>
+</div>
+<div class="pt-2.5 mt-1 bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Total Payable</span>
+<span class="font-label-sm text-label-sm text-outline">Inclusive of NHIS/FDA levies</span>
+</div>
+<div class="text-right">
+<span class="font-currency-display text-currency-display text-primary" id="val-total">GH₵ 115.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Interactive Action Trigger -->
+<div class="px-margin mt-6 space-y-3">
+<button class="w-full h-12 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.99] transition-all" id="btn-submit-pay" onclick="simulatePaymentFlow()">
+<span class="material-symbols-outlined text-[19px]">lock</span>
+<span id="btn-text">Pay GH₵ 115.00 with MTN MoMo</span>
+</button>
+<!-- Regulation Reassurance Note -->
+<div class="flex items-center justify-center gap-2 text-center px-4">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<p class="font-label-sm text-label-sm text-outline">
+        Safe medication dispensing under Ghana FDA regulations • DavidCare Health
+      </p>
+</div>
+</div>
+<!-- Instant USSD Simulation Modal (Appears upon button click) -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm flex items-center justify-center p-4" id="momo-modal">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl p-space-lg shadow-xl text-center animate-in fade-in zoom-in duration-200">
+<div class="w-14 h-14 mx-auto rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[28px] animate-bounce">cell_tower</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Approve MoMo Prompt</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        We have triggered a transaction prompt to <strong class="text-on-surface">024 498 0122</strong>.
+      </p>
+<div class="my-4 p-3 bg-surface-container rounded-xl text-left">
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>Merchant</span>
+<span class="text-on-surface font-semibold">DavidCare Pharmacy</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>Amount</span>
+<span class="text-primary font-bold" id="modal-amount">GH₵ 115.00</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>Reference</span>
+<span class="text-on-surface font-mono">RX-1042</span>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+        Waiting for device authorization PIN...
+      </div>
+<button class="w-full py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="closeModal()">
+        Cancel / Change Number
+      </button>
+</div>
+</div>
+</div>
+<script>
+  let currentFulfillment = 'pickup';
+  let currentPayment = 'momo';
+  const baseSubtotal = 115.00;
+  const deliveryFee = 15.00;
+
+  function setFulfillment(type) {
+    currentFulfillment = type;
+    const btnPickup = document.getElementById('btn-tab-pickup');
+    const btnDelivery = document.getElementById('btn-tab-delivery');
+    const panelPickup = document.getElementById('panel-pickup');
+    const panelDelivery = document.getElementById('panel-delivery');
+    const costDelivery = document.getElementById('cost-delivery');
+    const valTotal = document.getElementById('val-total');
+    const labelMode = document.getElementById('label-fulfillment-mode');
+
+    if (type === 'pickup') {
+      btnPickup.className = "flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm transition-all text-center";
+      btnDelivery.className = "flex flex-col items-center justify-center py-2.5 px-2 rounded-lg text-on-surface-variant transition-all text-center";
+      panelPickup.classList.remove('hidden');
+      panelDelivery.classList.add('hidden');
+      costDelivery.innerText = "GH₵ 0.00";
+      costDelivery.className = "font-label-lg text-label-lg text-secondary";
+      labelMode.innerText = "(Pickup)";
+      updateTotal(baseSubtotal);
+    } else {
+      btnDelivery.className = "flex flex-col items-center justify-center py-2.5 px-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm transition-all text-center";
+      btnPickup.className = "flex flex-col items-center justify-center py-2.5 px-2 rounded-lg text-on-surface-variant transition-all text-center";
+      panelDelivery.classList.remove('hidden');
+      panelPickup.classList.add('hidden');
+      costDelivery.innerText = "GH₵ 15.00";
+      costDelivery.className = "font-label-lg text-label-lg text-on-surface font-semibold";
+      labelMode.innerText = "(Express Bike)";
+      updateTotal(baseSubtotal + deliveryFee);
+    }
+  }
+
+  function updateTotal(total) {
+    const formatted = "GH₵ " + total.toFixed(2);
+    document.getElementById('val-total').innerText = formatted;
+    document.getElementById('modal-amount').innerText = formatted;
+    updatePayButton(formatted);
+  }
+
+  function selectPayment(method) {
+    currentPayment = method;
+    const momoCard = document.getElementById('method-momo');
+    const cardCard = document.getElementById('method-card');
+    const cashCard = document.getElementById('method-cash');
+
+    [momoCard, cardCard, cashCard].forEach(el => {
+      el.classList.remove('ring-2', 'ring-primary');
+    });
+
+    if (method === 'momo') momoCard.classList.add('ring-2', 'ring-primary');
+    if (method === 'card') cardCard.classList.add('ring-2', 'ring-primary');
+    if (method === 'cash') cashCard.classList.add('ring-2', 'ring-primary');
+
+    const totalStr = document.getElementById('val-total').innerText;
+    updatePayButton(totalStr);
+  }
+
+  function updatePayButton(totalStr) {
+    const btnText = document.getElementById('btn-text');
+    if (currentPayment === 'momo') {
+      btnText.innerText = "Pay " + totalStr + " with MTN MoMo";
+    } else if (currentPayment === 'card') {
+      btnText.innerText = "Pay " + totalStr + " with Card";
+    } else {
+      btnText.innerText = "Confirm Order & Pay at Counter (" + totalStr + ")";
+    }
+  }
+
+  function simulatePaymentFlow() {
+    if (currentPayment === 'momo') {
+      document.getElementById('momo-modal').classList.remove('hidden');
+    } else {
+      alert("Order DC-1042 successfully scheduled with DavidCare East Legon!");
+    }
+  }
+
+  function closeModal() {
+    document.getElementById('momo-modal').classList.add('hidden');
+  }
+</script></main></body></html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#3f4945", "tertiary-fixed": "#cce5ff", "on-primary-fixed-variant": "#005142", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-error-container": "#93000a", "on-tertiary-container": "#8bc9ff", "inverse-primary": "#90d4c0", "tertiary-fixed-dim": "#93ccff", "surface-variant": "#dae2fd", "primary-fixed": "#abf0dc", "primary-fixed-dim": "#90d4c0", "tertiary-container": "#005582", "inverse-on-surface": "#eef0ff", "surface-tint": "#23695a", "surface-container-highest": "#dae2fd", "primary": "#004236", "surface-container-high": "#e2e7ff", "on-secondary-container": "#12715e", "surface-container-low": "#f2f3ff", "tertiary": "#003d5f", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005142", "primary-container": "#0f5b4c", "surface-dim": "#d2d9f4", "on-primary-container": "#8dd0bd", "secondary-container": "#9ff3db", "on-tertiary-fixed-variant": "#004b73", "on-surface": "#131b2e", "background": "#faf8ff", "secondary-fixed": "#9ff3db", "outline-variant": "#bfc9c4", "on-primary-fixed": "#002019", "on-tertiary": "#ffffff", "surface": "#faf8ff", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary": "#046b58", "on-secondary-fixed": "#002019", "outline": "#6f7975", "surface-container": "#eaedff", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#83d6bf", "inverse-surface": "#283044", "on-primary": "#ffffff", "on-tertiary-fixed": "#001d31" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-lg": "2rem", "space-xl": "2rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-md": "1.5rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "currency-display": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "currency-display": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Go Back" class="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight truncate">Appointment</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Customer Care Support" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors relative" data-path="customer-care" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen pb-safe"><div class="flex flex-col w-full px-margin pb-24 space-y-space-lg">
+<!-- Warm Human Welcome Message from DavidCare -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-secondary-container/40 pointer-events-none blur-xl"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="relative flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Warm portrait photo of friendly Ghanaian pharmacist Pharm David Mensah wearing a clean white lab coat and stethoscope, smiling warmly in a bright modern community pharmacy in Accra Ghana with natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9rg3JDBbmAYHXm2V-ZOKqnGSu2qK1xvFi_HqsOxIdH6OvYqPv0TMX-iNMeeXMcvfcQlTn60c11dMomhj6APLvrfPy0l7m7ISpWJ4fLq_3gJyzP7NBA7ZWLmFlyvx69nEDLVl-F7cHyInBFA-zHXnDef-_8b1Vk4Opgc9eUAkmFWidlAOsx80Q9Mv1RNBvBYfpBm_Bt6FdB7C77I1_CaErxLcFwd4Hzi37KvuBkBmytSjQzp6xHC7y"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-secondary rounded-full ring-2 ring-surface-container-low" title="Available for consults"></span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Community Healthcare</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Pharm. David Mensah</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">"Your health journey is personal. Let's review your routines together in dignity and comfort."</p>
+</div>
+</div>
+</div>
+<!-- 1. Active Upcoming Appointment Banner -->
+<section class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">Your Next Consultation</h3>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">event_upcoming</span> 1 Upcoming
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="min-w-0 flex-1">
+<div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[13px] mr-1" style="font-variation-settings: 'FILL' 1;">check_circle</span> Confirmed
+            </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-high text-on-surface-variant">
+              In-Person or Tele-Consult
+            </span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold leading-snug">Medication Adherence &amp; BP Review</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">person_heart</span> With Pharm. David
+          </p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-1.5">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span class="font-label-lg text-label-lg font-semibold">Wednesday, Oct 25 • 10:00 AM - 10:30 AM</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-outline">pin_drop</span>
+<span class="font-body-sm text-body-sm truncate">DavidCare East Legon (Consultation Room 1)</span>
+</div>
+</div>
+<!-- Context reminder card -->
+<div class="flex items-center gap-2 bg-amber-50 text-amber-900 px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-amber-700 flex-shrink-0">info</span>
+<p class="font-body-sm text-body-sm">Bring your current pill blister packs and BP logbook.</p>
+</div>
+<!-- Action buttons -->
+<div class="pt-1 flex items-center gap-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 bg-surface-container-high text-on-surface rounded-full font-label-md text-label-md active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+          Reschedule
+        </button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 px-3 bg-surface-container-high text-on-surface rounded-full font-label-md text-label-md active:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">event</span>
+          Add to Calendar
+        </button>
+<button aria-label="Cancel consultation" class="p-2 text-on-surface-variant hover:text-error active:bg-error-container/40 rounded-full transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 2. Book a New Pharmacy Service -->
+<section class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">Book a Clinical Service</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select standard clinical checkups or counseling</p>
+</div>
+<span class="text-label-sm font-label-sm text-secondary font-semibold bg-secondary-container/50 px-2 py-0.5 rounded-full">4 Available</span>
+</div>
+<!-- Interactive radio cards -->
+<div class="space-y-space-sm" id="serviceSelectionGroup">
+<!-- Option 1 (Selected) -->
+<label class="block relative cursor-pointer service-option">
+<input checked="" class="peer sr-only" name="pharmacy_service" type="radio" value="med_review"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-surface-container-low shadow-sm peer-checked:shadow-md transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary peer-checked:scale-125 transition-transform"></span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Comprehensive Medication Review</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">In-depth review of drug interactions, side effects, and routine optimization.</p>
+<div class="flex items-center gap-3 mt-2.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">timer</span> 30 min
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Pharmacist 1-on-1
+                </span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-currency-display text-currency-display text-secondary block font-bold">GH₵ 0.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Complimentary</span>
+</div>
+</div>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="block relative cursor-pointer service-option">
+<input class="peer sr-only" name="pharmacy_service" type="radio" value="bp_check"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-surface-container-low shadow-sm peer-checked:shadow-md transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Blood Pressure &amp; Cardiovascular Check</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Clinical Omron reading, pulse rate check, and personalized lifestyle coaching.</p>
+<div class="flex items-center gap-3 mt-2.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">timer</span> 15 min
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">ecg_heart</span> Vitals Log
+                </span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-currency-display text-currency-display text-on-surface block font-bold">GH₵ 15.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">In-Clinic</span>
+</div>
+</div>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="block relative cursor-pointer service-option">
+<input class="peer sr-only" name="pharmacy_service" type="radio" value="glucose_screen"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-surface-container-low shadow-sm peer-checked:shadow-md transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Blood Glucose &amp; HbA1c Screen</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Instant fingerstick glucose monitoring and nutritional counseling for diabetes.</p>
+<div class="flex items-center gap-3 mt-2.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">timer</span> 15 min
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">bloodtype</span> Instant result
+                </span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-currency-display text-currency-display text-on-surface block font-bold">GH₵ 25.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lab &amp; Consult</span>
+</div>
+</div>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="block relative cursor-pointer service-option">
+<input class="peer sr-only" name="pharmacy_service" type="radio" value="vaccination"/>
+<div class="p-space-md rounded-xl bg-surface-container-lowest peer-checked:bg-surface-container-low shadow-sm peer-checked:shadow-md transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline-variant"></span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Vaccination &amp; Travel Immunization Consult</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Yellow card verification, regional travel prophylaxis (Malaria), and booster updates.</p>
+<div class="flex items-center gap-3 mt-2.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">timer</span> 20 min
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">vaccines</span> Certified
+                </span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-currency-display text-currency-display text-on-surface block font-bold">GH₵ 20.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+ Vaccine cost</span>
+</div>
+</div>
+</div>
+</label>
+</div>
+</section>
+<!-- 3. Clean Interactive Calendar & Slot Picker -->
+<section class="flex flex-col space-y-space-sm bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">calendar_month</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">October 2025</h3>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Previous week" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant active:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-label="Next week" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant active:bg-surface-container-high" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Day Picker Pills -->
+<div class="grid grid-cols-5 gap-2 pt-1">
+<!-- Mon 23 -->
+<button class="day-pill flex flex-col items-center py-2.5 px-1.5 rounded-xl bg-surface-container-low text-on-surface active:bg-surface-container-high transition-all" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mon</span>
+<span class="font-headline-md text-headline-md font-semibold mt-0.5">23</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></span>
+</button>
+<!-- Tue 24 -->
+<button class="day-pill flex flex-col items-center py-2.5 px-1.5 rounded-xl bg-surface-container-low text-on-surface active:bg-surface-container-high transition-all" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tue</span>
+<span class="font-headline-md text-headline-md font-semibold mt-0.5">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></span>
+</button>
+<!-- Wed 25 [Selected] -->
+<button class="day-pill flex flex-col items-center py-2.5 px-1.5 rounded-xl bg-primary text-on-primary shadow-md transition-all ring-2 ring-primary" type="button">
+<span class="font-label-sm text-label-sm text-on-primary/80">Wed</span>
+<span class="font-headline-md text-headline-md font-bold mt-0.5">25</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1.5"></span>
+</button>
+<!-- Thu 26 -->
+<button class="day-pill flex flex-col items-center py-2.5 px-1.5 rounded-xl bg-surface-container-low text-on-surface active:bg-surface-container-high transition-all" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thu</span>
+<span class="font-headline-md text-headline-md font-semibold mt-0.5">26</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></span>
+</button>
+<!-- Fri 27 -->
+<button class="day-pill flex flex-col items-center py-2.5 px-1.5 rounded-xl bg-surface-container-low text-on-surface active:bg-surface-container-high transition-all" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fri</span>
+<span class="font-headline-md text-headline-md font-semibold mt-0.5">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1.5"></span>
+</button>
+</div>
+<!-- Time Slots Section -->
+<div class="space-y-space-sm pt-2">
+<!-- Morning Slots -->
+<div>
+<div class="flex items-center gap-1.5 text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-[16px] text-amber-600">light_mode</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Morning Availability</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="time-slot-btn py-2.5 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center active:bg-surface-container-high transition-colors" type="button">
+            09:00 AM
+          </button>
+<button class="time-slot-btn py-2.5 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center active:bg-surface-container-high transition-colors" type="button">
+            09:30 AM
+          </button>
+<!-- 10:00 AM Selected -->
+<button class="time-slot-btn py-2.5 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold text-center shadow-sm ring-2 ring-primary transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[15px]">done</span> 10:00 AM
+          </button>
+<button class="time-slot-btn py-2.5 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center active:bg-surface-container-high transition-colors" type="button">
+            11:30 AM
+          </button>
+</div>
+</div>
+<!-- Afternoon Slots -->
+<div class="pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-[16px] text-orange-500">wb_twilight</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Afternoon Availability</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="time-slot-btn py-2.5 px-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center active:bg-surface-container-high transition-colors truncate" type="button">
+            02:00 PM
+          </button>
+<!-- Booked slot disabled state -->
+<button class="py-2.5 px-2 rounded-lg bg-surface-container-highest/60 text-outline line-through font-label-md text-label-md text-center cursor-not-allowed truncate" disabled="" title="Slot already booked" type="button">
+            03:30 PM
+          </button>
+<button class="time-slot-btn py-2.5 px-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center active:bg-surface-container-high transition-colors truncate" type="button">
+            04:15 PM
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Appointment Preparation Checklist -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">checklist</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">Consultation Prep Checklist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Simple steps to help Pharm. David assist you best</p>
+</div>
+</div>
+<div class="space-y-2.5 pt-1">
+<div class="flex items-start gap-3 bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">1</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Upload recent prescription</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Snap a quick photo or attach a PDF if applicable to your current therapy.</p>
+<button class="mt-2 inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">upload_file</span> Attach File (Optional)
+          </button>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">2</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Note down herbal remedies &amp; supplements</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Local herbal mixtures, tonics, or dietary teas may interact with clinical compounds.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5">3</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Arrive 5 mins prior or join digital room</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We hold your slot for 10 minutes past scheduled time to preserve patient privacy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ghanaian Community Pharmacy Trust Seal -->
+<div class="flex items-center justify-center gap-2 py-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-body-sm text-body-sm text-center">Pharmacy Council Ghana Reg. PCG/GAR/2023/1184</span>
+</div>
+<!-- 5. Bottom Sticky CTA Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md px-margin py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.06)] pb-safe">
+<div class="max-w-md mx-auto space-y-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm px-1">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield</span> Confirmed with Pharm. David
+        </span>
+<span>Payment: MoMo or In-Clinic</span>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary rounded-full font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md active:bg-primary-container transition-colors" id="confirmConsultBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">calendar_add_on</span>
+<span>Confirm Appointment (Oct 25, 10:00 AM)</span>
+</button>
+<!-- Local Network Badges note -->
+<div class="flex items-center justify-center gap-3 pt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instant prompt supports:</span>
+<div class="flex items-center gap-1.5 text-label-sm font-semibold text-on-surface">
+<span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-[10px]">MTN MoMo</span>
+<span class="px-1.5 py-0.5 rounded bg-red-100 text-red-800 text-[10px]">Telecel</span>
+<span class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-800 text-[10px]">AT Money</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for calendar slot selection and service highlight
+  document.querySelectorAll('.time-slot-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.time-slot-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'font-bold', 'ring-2', 'ring-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      this.classList.remove('bg-surface-container', 'text-on-surface');
+      this.classList.add('bg-primary', 'text-on-primary', 'font-bold', 'ring-2', 'ring-primary');
+    });
+  });
+
+  document.querySelectorAll('.day-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('.day-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'font-bold', 'shadow-md', 'ring-2', 'ring-primary');
+        p.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      this.classList.remove('bg-surface-container-low', 'text-on-surface');
+      this.classList.add('bg-primary', 'text-on-primary', 'font-bold', 'shadow-md', 'ring-2', 'ring-primary');
+    });
+  });
+
+  const confirmBtn = document.getElementById('confirmConsultBtn');
+  if (confirmBtn) {
+    confirmBtn.addEventListener('click', () => {
+      confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Securing Consultation Slot...</span>';
+      setTimeout(() => {
+        confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Slot Reserved! Notification Sent.</span>';
+        confirmBtn.classList.replace('bg-primary', 'bg-secondary');
+      }, 900);
+    });
+  }
+</script></main></body></html>

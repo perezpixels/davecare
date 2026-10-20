@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#3f4945", "tertiary-fixed": "#cce5ff", "on-primary-fixed-variant": "#005142", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-error-container": "#93000a", "on-tertiary-container": "#8bc9ff", "inverse-primary": "#90d4c0", "tertiary-fixed-dim": "#93ccff", "surface-variant": "#dae2fd", "primary-fixed": "#abf0dc", "primary-fixed-dim": "#90d4c0", "tertiary-container": "#005582", "inverse-on-surface": "#eef0ff", "surface-tint": "#23695a", "surface-container-highest": "#dae2fd", "primary": "#004236", "surface-container-high": "#e2e7ff", "on-secondary-container": "#12715e", "surface-container-low": "#f2f3ff", "tertiary": "#003d5f", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005142", "primary-container": "#0f5b4c", "surface-dim": "#d2d9f4", "on-primary-container": "#8dd0bd", "secondary-container": "#9ff3db", "on-tertiary-fixed-variant": "#004b73", "on-surface": "#131b2e", "background": "#faf8ff", "secondary-fixed": "#9ff3db", "outline-variant": "#bfc9c4", "on-primary-fixed": "#002019", "on-tertiary": "#ffffff", "surface": "#faf8ff", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary": "#046b58", "on-secondary-fixed": "#002019", "outline": "#6f7975", "surface-container": "#eaedff", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#83d6bf", "inverse-surface": "#283044", "on-primary": "#ffffff", "on-tertiary-fixed": "#001d31" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-lg": "2rem", "space-xl": "2rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-md": "1.5rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "currency-display": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "currency-display": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Go Back" class="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight truncate">Family Profiles</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Customer Care Support" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors relative" data-path="customer-care" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen pb-safe"><div class="flex flex-col w-full pb-10">
+<!-- Top Introductions & Family Context -->
+<section class="px-margin pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm tracking-wide">
+        VERIFIED GUARDIAN ACCOUNT
+      </span>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+        MoH / Act 843
+      </span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold tracking-tight">
+      My Family &amp; Dependents
+    </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+      Manage verified prescriptions, medication timelines, and reminders for family members under your authorized care.
+    </p>
+</section>
+<!-- Profile Switcher Carousel -->
+<section class="w-full py-space-sm">
+<div class="flex items-center gap-space-sm overflow-x-auto px-margin no-scrollbar scroll-smooth">
+<!-- Profile 1: Ama Mensah (Self) -->
+<button class="flex-shrink-0 flex items-center gap-space-sm p-2 pr-4 rounded-full bg-surface-container-low transition-all duration-200 active:scale-95 shadow-sm text-left" id="profile-btn-ama" onclick="switchProfile('ama')">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an African woman in her late thirties, Ama Mensah, wearing warm mustard yellow fabric, soft natural daylight, serene confident smile, clinical health profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkFlhwz0QcPJ3S2VNE6Esw2elOOP5ZlFimgeL-4DSoYxvpB4ubB_n-2LSd10iSHYeVShbMy8s1kLxF_GCjvVJuJrUDn6gEyNtc-0xgz9leSRgfHej0NUpPg7yhE7Z7JJb-1SzK9b7_yNyrj1EH02Jhrqx5lQJhIrSZGAkve4b-Jb3QIFSwe9uZlN1I4QF6TI-fpepp_8uWdoY3XiwdTdcZ4rcA7djmLkZuTpo3bpSbr1nKEBiA_lHn"/>
+</div>
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Ama Mensah</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Self (Account)</span>
+</div>
+</button>
+<!-- Profile 2: Kojo Mensah (Active Selection) -->
+<button class="flex-shrink-0 flex items-center gap-space-sm p-2 pr-4 rounded-full bg-primary text-on-primary transition-all duration-200 active:scale-95 shadow-md text-left" id="profile-btn-kojo" onclick="switchProfile('kojo')">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up joyful portrait of a cheerful 8-year-old Ghanaian schoolboy, Kojo Mensah, with a warm gentle smile, clean teal and mint background, bright ambient studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1l16NaJzp3JQgplFzb636nPM3XejE5JMvcsOZafMgWWxE407dqEctCdhXmRz-Qm_bWf7btTwvVsWZYIwUS_-0oGuVCMD1RI17a-LPn-fJy_i1kg96lYmX2dk6_r4SgnBq0EaZ32gkGnVDP6-pNVZn5dzyfjxpghjVxv2NRl6yxWMkZjf80tBP-jL3zHOVN6P-MnYR8CibvS_0UrIugdcL19lqnwKc1DWZ_zlYsENyfi7m8ulxFgDx"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-lg text-label-lg text-on-primary truncate font-bold">Kojo Mensah</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim truncate">Son • 8 yrs</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-secondary-container flex-shrink-0 animate-pulse"></span>
+</button>
+<!-- Profile 3: Mary Mensah (Grandma) -->
+<button class="flex-shrink-0 flex items-center gap-space-sm p-2 pr-4 rounded-full bg-surface-container-low transition-all duration-200 active:scale-95 shadow-sm text-left" id="profile-btn-mary" onclick="switchProfile('mary')">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Respectful warm portrait of a 68-year-old Ghanaian grandmother, Mary Mensah, elegant traditional kente accents, wise gentle eyes, clear clean clinical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB9Xt_fKvpYZDf4OhArYlmuIe8ZMzrPxu8qotJUneZthTFvXQCqAVB6eCbfdZT-01vcXj37wSiRVm5en97vZykiwNlTFNfhCRV2q5XDchVV6hyOsP1l2XgILKE4d_z7B4bko7Z73eZHyr_F8SPn35z32SMX_ovZYZZ5piRKspJprbl0DbVHAwjPXVuA2sK3SJPfS-bjQA374mYapzBklN4CJQ4rPISx4mu_V8O0WTUEIQp-LevCpme"/>
+</div>
+<div class="flex flex-col min-w-0 pr-1">
+<span class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Mary Mensah</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Mother • 68 yrs</span>
+</div>
+</button>
+<!-- Action: Add Family Member -->
+<button class="flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-surface-container-high text-primary hover:bg-surface-container-highest transition-all duration-200 active:scale-95 shadow-sm" onclick="triggerNewProfileSheet()">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span class="font-label-md text-label-md font-semibold whitespace-nowrap">+ Add Dependent</span>
+</button>
+</div>
+</section>
+<!-- Dependent Context Bar -->
+<section class="px-margin pt-space-xs">
+<div class="w-full p-space-sm rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">child_care</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Viewing Kojo's Health Record</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-sm text-[10px] font-bold">ACTIVE</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant truncate">Pediatric Dosage Authority • Dr. Mensah Verified</p>
+</div>
+</div>
+<button class="text-secondary font-label-sm text-label-sm font-semibold flex-shrink-0 px-2 py-1 rounded-lg bg-surface-container active:bg-surface-container-high" onclick="switchProfile('ama')">
+        Switch
+      </button>
+</div>
+</section>
+<!-- Dependent Active Health Overview: Kojo's Regimen -->
+<section class="px-margin pt-space-md flex flex-col gap-space-sm">
+<!-- Authorization Note -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">shield_with_heart</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+<strong class="text-on-surface font-semibold">Caregiver Authorized Mode:</strong> Clinical logs for pediatric dosage and reminders configured for Ama Mensah (Mother).
+      </p>
+</div>
+<!-- Active Pediatric Regimen Card -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md">
+<!-- Regimen Header -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Pediatric Antibiotic
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Rx #GH-40912
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold leading-tight">
+            Amoxicillin Oral Suspension
+          </h3>
+<span class="font-label-md text-label-md text-secondary font-semibold">125mg / 5ml • 100ml bottle</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">medication_liquid</span>
+</div>
+</div>
+<!-- Dosing Instruction Callout -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dosage Protocol</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Give 5ml twice daily after breakfast &amp; dinner for 5 days. Shake well before measuring.
+          </p>
+</div>
+</div>
+<!-- Course Progress Ring / Bar -->
+<div class="flex flex-col gap-space-xs pt-1">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md text-on-surface-variant">Antibiotic Course Timeline</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Day 2 of 5</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[40%] transition-all duration-500"></div>
+</div>
+<div class="flex items-center justify-between pt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span>Started: Oct 23</span>
+<span class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px]">alarm</span>
+            Next: 06:00 PM (Tonight)
+          </span>
+</div>
+</div>
+<!-- Adherence Action Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs" id="dose-action-container">
+<button class="flex-1 h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-sm active:scale-[0.98] transition-transform" id="dose-given-btn" onclick="recordDoseGiven()">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Mark Given to Kojo</span>
+</button>
+<button class="h-12 px-space-md rounded-full bg-surface-container-high text-on-surface-variant font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1 active:scale-[0.98] transition-transform" id="dose-snooze-btn" onclick="snoozeDose()">
+<span class="material-symbols-outlined text-[18px]">snooze</span>
+<span>30m</span>
+</button>
+</div>
+<div class="hidden p-space-sm rounded-xl bg-secondary-container text-on-secondary-container flex items-center gap-space-sm animate-fadeIn" id="dose-success-badge">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span class="font-label-md text-label-md font-semibold">Logged! Evening dose marked as completed at 5:48 PM</span>
+</div>
+</div>
+<!-- Upcoming Pediatric Follow-up Appointment -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">CLINICAL SCHEDULE</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px] font-semibold">In-Clinic</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex flex-col items-center justify-center flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase font-bold text-on-surface-variant">OCT</span>
+<span class="font-headline-md text-headline-md font-bold text-primary leading-none">27</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Pediatric Follow-up &amp; Ear Check</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">With Pharm. David Mensah • 11:30 AM</p>
+<div class="flex items-center gap-1 mt-1 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>DavidCare Clinic • East Legon branch</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dependent Caregiver Permissions & Consent Controls -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
+        Caregiver Access Permissions
+      </h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Kojo's Profile</span>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-space-sm shadow-sm flex flex-col divide-y-0 gap-space-xs">
+<!-- Permission Item 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">prescriptions</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">View Pediatric Prescriptions &amp; Refills</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Authorized parental prescription dispensing</span>
+</div>
+</div>
+<div class="w-10 h-6 rounded-full bg-primary p-0.5 flex items-center justify-end transition-colors cursor-pointer flex-shrink-0">
+<div class="w-5 h-5 rounded-full bg-surface shadow-sm"></div>
+</div>
+</div>
+<!-- Permission Item 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Receive WhatsApp Dose Reminders</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Sends to Ama (+233 24 492 8819)</span>
+</div>
+</div>
+<div class="w-10 h-6 rounded-full bg-primary p-0.5 flex items-center justify-end transition-colors cursor-pointer flex-shrink-0">
+<div class="w-5 h-5 rounded-full bg-surface shadow-sm"></div>
+</div>
+</div>
+<!-- Permission Item 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Book In-Clinic Consultations</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Schedule visits and view clinical notes</span>
+</div>
+</div>
+<div class="w-10 h-6 rounded-full bg-primary p-0.5 flex items-center justify-end transition-colors cursor-pointer flex-shrink-0">
+<div class="w-5 h-5 rounded-full bg-surface shadow-sm"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Grandma Mary's Chronic Care Summary Card -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
+          Elder Care Watch
+        </h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+          Mother
+        </span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" onclick="switchProfile('mary')">
+        Full Dossier →
+      </button>
+</div>
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Warm portrait photograph of senior African elder Mary Mensah, dignified and calm expression, soft natural lighting against neutral warm backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmhdAzRbrx2dksrxoBxAiNLmR6Wvh9n4qUGdK6ru5hxtn0m5T4pjTr70AV2X-Ps0BHmoP7zVJrZDt85dM7hlBsH1PFqVvkDAmGZbmtvdaVdFyIKuZ_rdmrOr05K_Yo0NKLu3cvLhzj0ney0kK8e2DntDbaVCyWQn56UuiOgFO9sw6g_BBFgBEIeu2eNFjeqFYR4XEmxH22GkU_Khe-dyxt9Y-SyP3CaXuWsX-H0XbWL2XSv7iFinev"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold truncate">Mary Mensah</h4>
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chronic Hypertension Protocol</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+            All 3 Taken Today
+          </span>
+<span class="font-label-sm text-[11px] text-secondary font-semibold mt-1">100% Adherence</span>
+</div>
+</div>
+<!-- Medication Quick Summary Strip -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">pill</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Amlodipine 5mg + Losartan 50mg</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold whitespace-nowrap">
+          2 Meds Daily
+        </span>
+</div>
+<!-- Refill Tracker Alert -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[18px]">sync_saved_locally</span>
+<span>MoMo 1-Tap Refill Due in <strong class="text-on-surface font-semibold">6 Days</strong></span>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold active:scale-95 transition-transform" onclick="requestRefillElder()">
+          Reorder for Mama
+        </button>
+</div>
+</div>
+</section>
+<!-- Data Protection Act 2012 Banner & CTA -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-high/60 shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0 mt-0.5">gavel</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">
+            Ghana Data Protection Act 2012 (Act 843)
+          </span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-normal mt-0.5">
+            Health records and clinical proxy dispensations are strictly encrypted. Proxy guardian consent is verified with Ghana Health Service &amp; licensed DavidCare pharmacists.
+          </p>
+</div>
+</div>
+</div>
+<!-- Prominent Primary Action Button -->
+<button class="w-full h-14 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.99] transition-transform mt-space-xs" onclick="triggerNewProfileSheet()">
+<span class="material-symbols-outlined text-[22px]">group_add</span>
+<span>+ Register Dependent or Elder Profile</span>
+</button>
+</section>
+<!-- Interactive Modal / Slide-Up Sheet (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-end justify-center transition-opacity duration-300 px-0 pb-safe" id="new-profile-modal">
+<div class="w-full bg-surface-container-lowest rounded-t-3xl p-space-lg shadow-2xl flex flex-col gap-space-md max-h-[85vh] overflow-y-auto">
+<div class="w-12 h-1.5 rounded-full bg-surface-container-high mx-auto -mt-2 mb-1"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">
+            Add Family Dependent
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Connect a child, spouse, or senior parent for proxy care.
+          </p>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center" onclick="closeNewProfileSheet()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-sm pt-1" onsubmit="handleProfileSubmit(event)">
+<!-- Relationship Selection -->
+<label class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Relationship Type</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-2.5 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold text-center" type="button">Child / Ward</button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold text-center" type="button">Elder / Parent</button>
+<button class="py-2.5 px-3 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold text-center" type="button">Spouse</button>
+</div>
+</label>
+<!-- Dependent Full Name -->
+<label class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Full Legal Name</span>
+<input class="h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="e.g. Kwame Mensah" required="" type="text"/>
+</label>
+<!-- Date of Birth / Age -->
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Date of Birth</span>
+<input class="h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none shadow-sm" required="" type="date" value="2018-04-12"/>
+</label>
+<label class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ghana Card Pin (Optional)</span>
+<input class="h-12 px-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none shadow-sm" placeholder="GHA-000000000-0" type="text"/>
+</label>
+</div>
+<!-- GhanaPost GPS Address for localized medication drops -->
+<label class="flex flex-col gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">GhanaPost GPS Digital Address</span>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-space-md pr-12 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none shadow-sm" placeholder="GA-492-1204" type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px]">pin_drop</span>
+</div>
+</label>
+<!-- Consent Check -->
+<label class="flex items-start gap-space-sm py-2 cursor-pointer">
+<input checked="" class="w-5 h-5 rounded mt-0.5 text-primary focus:ring-0" required="" type="checkbox"/>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight">
+            I certify that I am the legally recognized guardian or designated healthcare proxy for this individual under Ghana Public Health &amp; Data Protection laws.
+          </span>
+</label>
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center shadow-md active:scale-98 transition-transform mt-2" type="submit">
+          Save &amp; Verify Profile
+        </button>
+</form>
+</div>
+</div>
+</div>
+<script>
+  function switchProfile(profileId) {
+    const kojoBtn = document.getElementById('profile-btn-kojo');
+    const amaBtn = document.getElementById('profile-btn-ama');
+    const maryBtn = document.getElementById('profile-btn-mary');
+
+    // Simple visual highlight toggle
+    [kojoBtn, amaBtn, maryBtn].forEach(b => {
+      if (b) {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+        b.classList.add('bg-surface-container-low', 'text-on-surface');
+      }
+    });
+
+    const activeEl = document.getElementById('profile-btn-' + profileId);
+    if (activeEl) {
+      activeEl.classList.remove('bg-surface-container-low', 'text-on-surface');
+      activeEl.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+    }
+  }
+
+  function recordDoseGiven() {
+    const actionContainer = document.getElementById('dose-action-container');
+    const successBadge = document.getElementById('dose-success-badge');
+    if (actionContainer && successBadge) {
+      actionContainer.classList.add('hidden');
+      successBadge.classList.remove('hidden');
+    }
+  }
+
+  function snoozeDose() {
+    const snoozeBtn = document.getElementById('dose-snooze-btn');
+    if (snoozeBtn) {
+      snoozeBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span><span>Snoozed 30m</span>';
+      snoozeBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+    }
+  }
+
+  function requestRefillElder() {
+    alert('Refill order initiated for Mary Mensah. An instant MoMo payment authorization prompt will be pushed to your registered MTN number.');
+  }
+
+  function triggerNewProfileSheet() {
+    const modal = document.getElementById('new-profile-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeNewProfileSheet() {
+    const modal = document.getElementById('new-profile-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function handleProfileSubmit(e) {
+    e.preventDefault();
+    closeNewProfileSheet();
+    alert('Dependent profile successfully submitted for clinical review by Pharm. David Mensah.');
+  }
+</script></main></body></html>

@@ -1,0 +1,46 @@
+# DavidCare — Flutter pharmacy platform
+#
+# Product code lives in apps/davecare (landing + pharmacy web + patient mobile).
+# Stitch zip/extract stays local so GitHub language stats stay Dart/Flutter.
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Design source (local reference only)
+_stitch_zip_extract/
+*.zip
+
+# Flutter / Dart
+apps/davecare/.dart_tool/
+apps/davecare/.flutter-plugins-dependencies
+apps/davecare/.pub-cache/
+apps/davecare/.pub/
+apps/davecare/build/
+apps/davecare/coverage/
+apps/davecare/**/doc/api/
+apps/davecare/**/*.symbols
+apps/davecare/**/*.map.json
+apps/davecare/android/app/debug/
+apps/davecare/android/app/profile/
+apps/davecare/android/app/release/
+
+# Assembled local / CI web preview
+preview/
+
+# Node leftovers
+node_modules/
+
+# Misc
+*.iml
+.dart_tool/
+build/

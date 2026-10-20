@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#3f4945", "tertiary-fixed": "#cce5ff", "on-primary-fixed-variant": "#005142", "surface-bright": "#faf8ff", "on-error": "#ffffff", "on-error-container": "#93000a", "on-tertiary-container": "#8bc9ff", "inverse-primary": "#90d4c0", "tertiary-fixed-dim": "#93ccff", "surface-variant": "#dae2fd", "primary-fixed": "#abf0dc", "primary-fixed-dim": "#90d4c0", "tertiary-container": "#005582", "inverse-on-surface": "#eef0ff", "surface-tint": "#23695a", "surface-container-highest": "#dae2fd", "primary": "#004236", "surface-container-high": "#e2e7ff", "on-secondary-container": "#12715e", "surface-container-low": "#f2f3ff", "tertiary": "#003d5f", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005142", "primary-container": "#0f5b4c", "surface-dim": "#d2d9f4", "on-primary-container": "#8dd0bd", "secondary-container": "#9ff3db", "on-tertiary-fixed-variant": "#004b73", "on-surface": "#131b2e", "background": "#faf8ff", "secondary-fixed": "#9ff3db", "outline-variant": "#bfc9c4", "on-primary-fixed": "#002019", "on-tertiary": "#ffffff", "surface": "#faf8ff", "on-secondary": "#ffffff", "on-background": "#131b2e", "secondary": "#046b58", "on-secondary-fixed": "#002019", "outline": "#6f7975", "surface-container": "#eaedff", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#83d6bf", "inverse-surface": "#283044", "on-primary": "#ffffff", "on-tertiary-fixed": "#001d31" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-lg": "2rem", "space-xl": "2rem", "margin-md": "1.5rem", "gutter": "1rem", "gutter-md": "1.5rem", "margin": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "currency-display": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "currency-display": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Go Back" class="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight truncate">Refill</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Customer Care Support" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors relative" data-path="customer-care" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen pb-safe"><div class="flex flex-col w-full pb-10 space-y-space-md">
+<!-- Top Section: Thoughtful Refill Opportunity Advisory -->
+<div class="px-margin pt-space-xs">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/40 pointer-events-none blur-xl"></div>
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0 text-on-secondary-container mt-0.5">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">calendar_clock</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Your medication may be due for a refill soon</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Based on your previous 30-day fulfillment on Sept 21, your supply is calculated to have approximately <span class="font-label-md text-secondary font-semibold">4 days remaining</span>.
+          </p>
+<div class="mt-space-sm inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm">Respectful estimate based on your regular schedule</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: May Need Refill -->
+<div class="px-margin space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">May Need Refill</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2 tracked</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Rx</span>
+</div>
+<!-- Card 1: Amlodipine 5mg -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Refill Window Open</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blood Pressure</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold truncate">Amlodipine 5mg</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily Blood Pressure Support</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">pill</span>
+</div>
+</div>
+<!-- Prescriber and Cadence Data -->
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">repeat</span>
+            Cadence: ~30 days
+          </span>
+<span class="font-label-md text-label-md text-on-surface">Last filled Aug 28</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">medical_services</span>
+            Prescriber
+          </span>
+<span class="font-label-md text-label-md text-on-surface truncate max-w-[180px]">Dr. Joyce Ansah (Nyaho)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+            Quantity
+          </span>
+<span class="font-label-md text-label-md text-on-surface">30 tabs (3 blisters)</span>
+</div>
+</div>
+<!-- Interactive Supply Confirmation (Moment of Delight) -->
+<div class="space-y-space-xs pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pill Check • How much do you have left?</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold" id="supply-hint">Select supply</span>
+</div>
+<div class="grid grid-cols-3 gap-2" id="pill-counter-group">
+<button class="pill-lvl-btn flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center group" onclick="selectPillLevel(this, 'almost')" type="button">
+<span class="material-symbols-outlined text-[20px] text-error mb-0.5">battery_low</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold group-hover:text-primary">1-3 days</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Almost out</span>
+</button>
+<button class="pill-lvl-btn flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center group" onclick="selectPillLevel(this, 'half')" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-secondary-container mb-0.5">battery_horiz_050</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold group-hover:text-primary">Half full</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">~1-2 wks</span>
+</button>
+<button class="pill-lvl-btn flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all text-center group" onclick="selectPillLevel(this, 'enough')" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary mb-0.5">battery_full</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold group-hover:text-primary">Plenty</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Enough now</span>
+</button>
+</div>
+</div>
+<!-- Price & MoMo Badge -->
+<div class="flex items-center justify-between pt-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Total Copay &amp; Meds</span>
+<div class="flex items-baseline gap-1">
+<span class="font-currency-display text-currency-display text-on-surface font-bold">GH₵55.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">for 30 days</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-semibold">MoMo 1-Tap Ready</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="space-y-2 pt-1">
+<button class="w-full h-12 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 hover:bg-primary transition-colors shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+<span>Request Pharmacy Refill (GH₵55.00)</span>
+</button>
+<button class="w-full h-11 rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-colors" type="button">
+<div class="w-6 h-6 rounded-full overflow-hidden flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Close up portrait photograph of friendly Ghanaian clinical pharmacist Pharm. David Mensah wearing a clean white coat with a warm and reassuring smile, professional clinic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbaFce1yfBvCahOT6WSqNX0GKVhF0JDLoqelDK-AZsFTn6snH1QyEnyeQlL4nie0tu1BaDXobxREgNpM5Lhl3qC3A7rZzwF5wV4wIUgD7tUNoTfmdXfODtm196j6_GhOxzdPcx2y0oJivuF9gWCJNRAsty8i1ta0OGOTQjvwPpmGZfniHGTYFBNvcL01SQ8MzVpdTKrizjeauQiFt6Vh-nckr4rmc-SfzKO8aqUNMXuhhVEwSo12VD"/>
+</div>
+<span>Ask Pharm. David about dose adjustment</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Metformin 500mg -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">Scheduled</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T2 Diabetes</span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold truncate">Metformin 500mg</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Glucophage • 60 Tablets</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">medication</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Refill window opens in 12 days</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Estimated date: Oct 16 • Supply still ample</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="w-full h-11 rounded-full bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-all" id="reminder-btn" onclick="toggleReminder(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<span id="reminder-text">Set Reminder Alert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section: Recently Requested / In-Process Refills -->
+<div class="px-margin space-y-space-sm pt-2">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">In-Process Refill</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active Dispatch</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Awaiting Pharmacy Confirmation
+            </span>
+</div>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-semibold">Ventolin Inhaler 100mcg</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Submitted: Today at 08:30 AM</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">air</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low space-y-1">
+<span class="font-label-sm text-[11px] text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">chat</span>
+          Patient Delivery Instruction
+        </span>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+          "Need 1 canister sent via express rider to East Legon."
+        </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">sports_motorsports</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Express Rider Assigned upon check</span>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" href="#">Track Status</a>
+</div>
+</div>
+</div>
+<!-- Section: Smart 1-Tap Reorder (Your Regulars) -->
+<div class="space-y-space-sm pt-2">
+<div class="px-margin flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Smart 1-Tap Reorder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your regular non-prescription essentials</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold">Past items</span>
+</div>
+<!-- Horizontal Scroll Carousel -->
+<div class="flex gap-space-sm overflow-x-auto px-margin pb-2 snap-x">
+<!-- Item 1: Paracetamol Extra -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between flex-shrink-0 snap-start space-y-space-sm">
+<div>
+<div class="w-full h-24 rounded-lg bg-surface-container-low mb-3 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Clean studio product photograph of a modern white and green pharmaceutical blister box of Paracetamol Extra tablets on a sterile reflective medical surface, bright soft clinic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaGPaCQEo_yjT1gKPPZ0XL_TrsUZccRWAtqaDmz_X8u2wN5phus4i3aUnZzRoCKvTrQL5jAV48gKW42JBAe1-s_C-iTpYb_tWS74dv16snryWgu9XrvydLFzZWCj1qcOaVlNWVPrHzKOo2XwUykfU2YX7OhRAk27F0XEqxRR0P5kd-cUEXhvktlHSVTP16dzJQVxfEIks3Tde1Rst8BPZtyTPOfTE18M9KEIy8rih0dgQlFnpU6Aii"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-[10px] font-semibold">Purchased 3x</span>
+</div>
+<h5 class="font-headline-md text-[15px] leading-snug text-on-surface font-semibold truncate">Paracetamol Extra 500mg</h5>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Last ordered 28 days ago</p>
+</div>
+<div class="pt-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">GH₵18.00</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Pack of 20</span>
+</div>
+<button class="w-full h-10 rounded-full bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-95" onclick="triggerReorder(this, 'Paracetamol Extra')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Reorder</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Vitamin C 1000mg -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between flex-shrink-0 snap-start space-y-space-sm">
+<div>
+<div class="w-full h-24 rounded-lg bg-surface-container-low mb-3 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High quality studio shot of an orange and white effervescent Vitamin C tube container sitting alongside a fresh slice of orange on a pristine white pharmacy laboratory counter with gentle sunlit highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4tSMuiZQA1UGQFqlJmCKegKHIiToSBxUHmjC5DXQmvbdtjE8zf9gBmUpq7zOm0ZVY33p9R9F6xsDOC2vPPcsL6LXCcireP2e0f_QmwZGoXgtrmFBkg7L-TLnVIccRjjtzn7lQ5MXcFWPe65BYv8OKPIKw5tEQLr7G8Xu4OyPFL6ca2yB8St12LCUpX9iEWbRGh_Cysc_HbACPeOe6yEtC_UGkHb698EXldWcdt9Or0UWX0gTu4uD1"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-[10px] font-semibold">Purchased 4x</span>
+</div>
+<h5 class="font-headline-md text-[15px] leading-snug text-on-surface font-semibold truncate">Vitamin C 1000mg</h5>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Effervescent Immune Tube</p>
+</div>
+<div class="pt-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">GH₵42.00</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">20 efferv. tabs</span>
+</div>
+<button class="w-full h-10 rounded-full bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-95" onclick="triggerReorder(this, 'Vitamin C 1000mg')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Reorder</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Digital Care Pack (Delightful prompt) -->
+<div class="min-w-[240px] max-w-[240px] bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between flex-shrink-0 snap-start space-y-space-sm">
+<div>
+<div class="w-full h-24 rounded-lg bg-secondary-container/40 flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[36px] text-secondary">sanitizer</span>
+</div>
+<h5 class="font-headline-md text-[15px] leading-snug text-on-surface font-semibold truncate">First Aid Antiseptic</h5>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Savlon Liquid 250ml</p>
+</div>
+<div class="pt-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">GH₵26.50</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">In Stock</span>
+</div>
+<button class="w-full h-10 rounded-full bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all active:scale-95" onclick="triggerReorder(this, 'First Aid Antiseptic')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Reorder</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Refill Notification Preferences -->
+<div class="px-margin pt-2">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">sms</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Refill Reminders via WhatsApp &amp; SMS</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct alerts to +233 24 498 0122</p>
+</div>
+</div>
+<!-- Accessible Toggle Switch -->
+<button aria-pressed="true" class="w-12 h-7 rounded-full bg-primary-container p-1 transition-colors relative flex items-center focus:outline-none" id="notif-toggle" onclick="toggleNotification(this)" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary shadow-sm transform translate-x-5 transition-transform" id="toggle-thumb"></span>
+</button>
+</div>
+<div class="pt-2 flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<p class="font-label-sm text-label-sm">Reminders respect your privacy. No drug names in SMS previews.</p>
+</div>
+</div>
+</div>
+<!-- Client Interaction Script -->
+<script>
+    function selectPillLevel(button, level) {
+      const parent = document.getElementById('pill-counter-group');
+      const buttons = parent.querySelectorAll('.pill-lvl-btn');
+      const hint = document.getElementById('supply-hint');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        btn.classList.add('bg-surface-container-low');
+      });
+
+      button.classList.remove('bg-surface-container-low');
+      button.classList.add('bg-secondary-container', 'text-on-secondary-container');
+
+      if (level === 'almost') {
+        hint.textContent = 'High refill urgency';
+        hint.className = 'font-label-sm text-label-sm text-error font-semibold';
+      } else if (level === 'half') {
+        hint.textContent = 'Supply logged (~10 days)';
+        hint.className = 'font-label-sm text-label-sm text-secondary font-semibold';
+      } else {
+        hint.textContent = 'Updated: Refill deferred';
+        hint.className = 'font-label-sm text-label-sm text-on-surface-variant font-semibold';
+      }
+    }
+
+    function toggleReminder(button) {
+      const text = document.getElementById('reminder-text');
+      const icon = button.querySelector('.material-symbols-outlined');
+      if (text.textContent === 'Set Reminder Alert') {
+        text.textContent = 'Alert Set for Oct 14';
+        icon.textContent = 'check_circle';
+        button.classList.remove('bg-surface-container-low', 'text-primary');
+        button.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      } else {
+        text.textContent = 'Set Reminder Alert';
+        icon.textContent = 'notifications_active';
+        button.classList.add('bg-surface-container-low', 'text-primary');
+        button.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+      }
+    }
+
+    function toggleNotification(btn) {
+      const thumb = document.getElementById('toggle-thumb');
+      const isPressed = btn.getAttribute('aria-pressed') === 'true';
+      if (isPressed) {
+        btn.setAttribute('aria-pressed', 'false');
+        btn.classList.remove('bg-primary-container');
+        btn.classList.add('bg-surface-container-high');
+        thumb.classList.remove('translate-x-5');
+        thumb.classList.add('translate-x-0');
+      } else {
+        btn.setAttribute('aria-pressed', 'true');
+        btn.classList.remove('bg-surface-container-high');
+        btn.classList.add('bg-primary-container');
+        thumb.classList.remove('translate-x-0');
+        thumb.classList.add('translate-x-5');
+      }
+    }
+
+    function triggerReorder(button, itemName) {
+      const originalHtml = button.innerHTML;
+      button.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Added</span>';
+      button.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      setTimeout(() => {
+        button.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>In Cart</span>';
+      }, 700);
+    }
+  </script>
+</div></main></body></html>

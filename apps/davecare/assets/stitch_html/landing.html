@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-container":"#12715e","primary-fixed":"#abf0dc","secondary-container":"#9ff3db","surface":"#faf8ff","tertiary-fixed":"#cce5ff","error-container":"#ffdad6","surface-variant":"#dae2fd","on-secondary":"#ffffff","on-error-container":"#93000a","tertiary":"#003d5f","outline-variant":"#bfc9c4","on-tertiary-container":"#8bc9ff","surface-container":"#eaedff","inverse-on-surface":"#eef0ff","on-tertiary":"#ffffff","background":"#faf8ff","inverse-surface":"#283044","surface-container-high":"#e2e7ff","surface-tint":"#23695a","on-error":"#ffffff","primary-container":"#0f5b4c","surface-container-lowest":"#ffffff","secondary":"#046b58","on-surface-variant":"#3f4945","on-primary-fixed-variant":"#005142","primary":"#004236","primary-fixed-dim":"#90d4c0","on-tertiary-fixed":"#001d31","on-surface":"#131b2e","on-primary-container":"#8dd0bd","surface-container-highest":"#dae2fd","secondary-fixed":"#9ff3db","outline":"#6f7975","on-primary":"#ffffff","on-primary-fixed":"#002019","on-secondary-fixed-variant":"#005142","secondary-fixed-dim":"#83d6bf","on-secondary-fixed":"#002019","on-background":"#131b2e","surface-bright":"#faf8ff","on-tertiary-fixed-variant":"#004b73","surface-container-low":"#f2f3ff","inverse-primary":"#90d4c0","tertiary-fixed-dim":"#93ccff","surface-dim":"#d2d9f4","tertiary-container":"#005582","error":"#ba1a1a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-md":"1rem","margin":"1rem","gutter":"1rem","gutter-md":"1.5rem","margin-lg":"2rem","margin-md":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-xl":"2rem"},"fontFamily":{"headline-lg-mobile":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"headline-md":["Inter"],"headline-xl":["Inter"],"headline-xl-mobile":["Inter"],"body-md":["Inter"],"currency-display":["Inter"],"label-sm":["Inter"],"label-md":["Inter"]},"fontSize":{"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"currency-display":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-margin-md flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0f5b4c
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VGyI16TlA67uwSQWUkiCBEfXqtsw9eq1pGPG7paZgqpjXKN9v9nFrhhH0zm_DIlyBy9PH_Hlp9culK9YVq-0ynJJEJ-4t9gJvbLV76N_OEhX6f4gVYuIGhcs2Y-0vIewAV-TcSGFicm6WKWrMXVMAeJsUW61r1VdO1mHFptLAckxIx0Dl9Z-XTRDpWpazQXgXNzLAoOx9J3wIUuUqJwufusj66p3390p32Dxwy_-msB2ttS-gUG93kdQA"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight leading-none">DavidCare</span><span class="font-label-sm text-label-sm text-secondary font-semibold tracking-wider uppercase mt-space-xs">Ghana &amp; West Africa</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-label-md font-bold"><a aria-current="page" class="transition-colors text-primary font-label-md font-bold" data-path="platform-overview" href="#">Platform Overview</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-pharmacies" href="#">For Pharmacies</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="for-patients" href="#">For Patients</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="integration-ecosystem" href="#">Integration Ecosystem</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="compliance-and-security" href="#">Compliance &amp; Security</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md text-primary bg-surface-container-low hover:bg-surface-container hover:text-on-surface px-space-md py-space-sm rounded-full transition-all duration-200" data-path="patient-app" href="#"><span class="material-symbols-outlined text-[18px] mr-space-xs text-primary">smartphone</span>Download Patient App</a><a class="inline-flex items-center justify-center font-label-md text-label-md text-on-primary bg-primary-container hover:bg-primary px-space-md py-space-sm rounded-full shadow-[0_2px_6px_rgba(15,91,76,0.15)] transition-all duration-200" data-path="request-demo" href="#"><span class="material-symbols-outlined text-[18px] mr-space-xs">calendar_today</span>Request Pharmacy Demo</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-space-xs" src="https://lh3.googleusercontent.com/aida/AEtjO1WTZX--SVrWgoLHjmhffSLwnBc0mVqozroRwsjxtpMzVOfwyt5R268JpdqEylLH46A6GgISv5EukNCtUloNpELRQWe_YLi9qgRDWrdyx3N7buam7ywrGOmw6R2CaXVljh-jOJz6aT0m09q72J7FTkyyd-yTSZwyKGZILEGPK9jVGD_cZK0kz-FMQ-d4fSTfaxlb4AETfsMq0oZ27y4vQYreRe58eZbqadVOZqJWpHoJCAYsiYWeadgbuus"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface py-space-xl lg:py-24">
+<!-- Ambient organic gradient glow -->
+<div class="absolute -top-32 right-1/4 w-[500px] h-[500px] bg-secondary-container/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-0 left-10 w-[420px] h-[420px] bg-tertiary-fixed/35 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1200px] mx-auto px-margin-md flex flex-col items-center">
+<!-- Trust Pill -->
+<div class="inline-flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-sm mb-space-lg">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Official Healthcare Technology Partner</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Built for Community Pharmacies across Ghana</span>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="max-w-4xl text-center mb-space-xl">
+<h1 class="font-headline-xl text-headline-xl lg:text-[48px] lg:leading-[56px] text-primary tracking-tight font-extrabold mb-space-md">
+          The Digital Care &amp; Patient Engagement Layer for Community Pharmacies.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+<strong class="text-on-surface font-semibold">DavidCare is NOT a POS.</strong> We seamlessly bridge the gap between your existing pharmacy dispensary software and your patients — automating refills, clinical consultations, prescription reviews, and digital MoMo orders.
+        </p>
+</div>
+<!-- Primary Action CTAs -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md mb-space-xl">
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label-lg text-label-lg text-on-primary bg-primary-container hover:bg-primary px-space-xl py-4 rounded-full shadow-md transition-all duration-200 group" href="#demo-modal">
+<span class="material-symbols-outlined text-[20px] mr-space-xs transition-transform group-hover:scale-110">calendar_month</span>
+          Book a Pharmacy Demo (Accra &amp; Nationwide)
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label-lg text-label-lg text-primary bg-surface-container-lowest hover:bg-surface-container-low px-space-xl py-4 rounded-full shadow-sm transition-all duration-200" href="#dual-value">
+<span class="material-symbols-outlined text-[20px] mr-space-xs text-secondary">explore</span>
+          Explore Patient App
+        </a>
+</div>
+<!-- Localized Trust Strip -->
+<div class="flex flex-wrap items-center justify-center gap-y-3 gap-x-space-lg text-on-surface-variant font-body-sm text-body-sm pb-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>Works alongside MedSys, RxWin &amp; WinPharm</span>
+</div>
+<div class="hidden sm:inline text-outline-variant">•</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">policy</span>
+<span>Ghana FDA Regulated &amp; Act 843 Compliant</span>
+</div>
+<div class="hidden sm:inline text-outline-variant">•</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">contactless</span>
+<span>Integrated MTN MoMo, Telecel Cash &amp; AT Money</span>
+</div>
+</div>
+<!-- Hero Visual Dual-Ecosystem Interactive Mockup -->
+<div class="w-full mt-space-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Side: Pharmacist Action Center & Customer 360 Dossier -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-lg p-space-lg flex flex-col gap-space-md">
+<!-- Window Header Bar -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-fixed"></div>
+<div class="w-3 h-3 rounded-full bg-primary-fixed-dim"></div>
+<span class="ml-space-xs font-label-sm text-label-sm text-on-surface-variant font-semibold tracking-wide">DavidCare Pharmacy OS • East Legon Branch</span>
+</div>
+<span class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded-full font-label-sm text-label-sm text-secondary font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span> Live Patient Stream
+            </span>
+</div>
+<!-- Pharmacist Action Center Mini-Bar -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rx Review Queue</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">8 Pending</span>
+<span class="font-label-sm text-[10px] text-secondary font-medium">Avg response 7m</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clinical Careline</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">4 Active</span>
+<span class="font-label-sm text-[10px] text-tertiary-container font-medium">Via WhatsApp Cloud</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Watchlist Demand</span>
+<span class="font-headline-md text-headline-md text-on-secondary-container font-bold">GH₵4,250</span>
+<span class="font-label-sm text-[10px] text-secondary font-medium">6 Unmet items</span>
+</div>
+</div>
+<!-- Customer 360 Dossier Card: Ama Mensah -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-headline-md">
+                  AM
+                </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold">Ama Mensah</h3>
+<span class="bg-secondary-fixed text-on-primary-fixed-variant px-2 py-0.5 rounded-full font-label-sm text-[11px] font-bold">Adherence 96%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+233 24 489 1204 • GhanaPost: GA-492-1204</p>
+</div>
+</div>
+<button class="bg-primary-container text-on-primary px-3 py-1.5 rounded-full font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Approve Rx
+              </button>
+</div>
+<!-- Longitudinal Timeline Preview -->
+<div class="mt-space-md pl-space-xs flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm relative">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-container flex items-center justify-center text-[12px] font-bold shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">medication</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Amoxicillin 500mg Caps (Course: Day 3 of 7)</span>
+<span class="font-label-sm text-label-sm text-outline">Today, 08:30 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dose confirmed via WhatsApp interactive quick-tap. Zero gastric side-effects reported.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm relative">
+<div class="w-6 h-6 rounded-full bg-surface-container text-tertiary flex items-center justify-center text-[12px] font-bold shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Chronic Refill: Amlodipine 10mg (Monthly)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Auto-Refill in 4 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prescription linked to Korle Bu OPD. MoMo direct pre-authorization ready.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Patient App Mobile Interface Preview -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full max-w-sm bg-surface-container-lowest rounded-2xl shadow-xl p-space-md flex flex-col gap-space-md">
+<!-- Mobile Shell Top Status -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">09:41</span>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span class="material-symbols-outlined text-[16px]">battery_charging_full</span>
+</div>
+</div>
+<!-- Patient Greeting & Pharmacist Quick-Careline Pill -->
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Akwaaba,</span>
+<h4 class="font-headline-md text-headline-md text-primary font-bold">Ama Mensah</h4>
+</div>
+<div class="relative">
+<img alt="Pharm. David Mensah" class="w-11 h-11 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1WTZX--SVrWgoLHjmhffSLwnBc0mVqozroRwsjxtpMzVOfwyt5R268JpdqEylLH46A6GgISv5EukNCtUloNpELRQWe_YLi9qgRDWrdyx3N7buam7ywrGOmw6R2CaXVljh-jOJz6aT0m09q72J7FTkyyd-yTSZwyKGZILEGPK9jVGD_cZK0kz-FMQ-d4fSTfaxlb4AETfsMq0oZ27y4vQYreRe58eZbqadVOZqJWpHoJCAYsiYWeadgbuus"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-secondary rounded-full"></span>
+</div>
+</div>
+<!-- Consult CTA Pill -->
+<div class="mt-space-sm bg-surface-container-lowest p-space-xs rounded-full flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 pl-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">chat</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Pharm. David is Online</span>
+</div>
+<button class="bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-sm text-label-sm font-bold">
+                  Ask Now
+                </button>
+</div>
+</div>
+<!-- Active Course Timeline Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Active Regimen</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-sm text-label-sm text-primary font-bold">Day 3 of 7</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Amoxicillin 500mg Capsules</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Take 1 capsule every 8 hours after meals</p>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container h-2 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 42.8%;"></div>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span> Next: 2:00 PM
+                </div>
+<button class="bg-secondary-fixed text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Mark Taken
+                </button>
+</div>
+</div>
+<!-- Pickup Pass Card with MoMo Integration -->
+<div class="bg-primary text-on-primary rounded-xl p-space-md flex items-center justify-between shadow-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider font-semibold">Fast Dispensary Pickup</span>
+<span class="font-currency-display text-currency-display tracking-tight font-bold">Pass #GHA-892</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest mt-0.5">Paid via MTN MoMo • Ready at Counter 2</span>
+</div>
+<div class="w-12 h-12 bg-on-primary rounded-lg p-1.5 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]">qr_code_2</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ARCHITECTURE CLARIFICATION ("NOT A POS") -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-margin-md">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">System Architecture &amp; Clarity</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">
+          Built to Augment Your Pharmacy, Never Replace It.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm leading-relaxed">
+          Community pharmacies in Ghana already have Point of Sale setups and inventory hardware. DavidCare solves the other side of the counter: ongoing patient compliance, continuous engagement, and repeat chronic refills.
+        </p>
+</div>
+<!-- Architectural Comparison Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg items-stretch">
+<!-- Left: Existing POS & ERP Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">point_of_sale</span>
+</div>
+<span class="bg-surface-container px-3 py-1 rounded-full font-label-sm text-label-sm text-outline font-bold">Untouched &amp; Safe</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold mb-space-xs">Your Existing POS &amp; ERP System</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              The internal operational engine you already rely on daily for in-store transactions, till accounting, and distributor batching.
+            </p>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">check</span>
+<span>Wholesale procurement &amp; warehouse receiving</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">check</span>
+<span>Physical till cash drawers and thermal receipt printers</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">check</span>
+<span>Back-office VAT calculations and GRA tax reporting</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">check</span>
+<span>Local dispensary barcode laser scanning</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-xl p-space-md bg-surface-container-low rounded-lg font-label-sm text-label-sm text-outline">
+            Maintains full control over ledger integrity and financial audits without disruption.
+          </div>
+</div>
+<!-- Right: DavidCare Patient Relationship Layer Card -->
+<div class="bg-primary rounded-xl p-space-xl shadow-md text-on-primary flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[28px]">health_and_safety</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm font-bold">The Missing Care Layer</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-primary font-bold mb-space-xs">DavidCare Engagement Platform</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim mb-space-lg">
+              The external patient layer that keeps community members connected to your pharmacists between prescription fills.
+            </p>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-surface-container-lowest">
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span><strong>Customer 360</strong> with longitudinal medication timelines</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span><strong>Safe Rx Review Gateway:</strong> OCR intake with pharmacist sign-off</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span><strong>Ask Pharm. David:</strong> WhatsApp Cloud API careline triage</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span><strong>Stock-Out Demand Watchlists:</strong> Recover lost sales automatically</span>
+</li>
+<li class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span>
+<span><strong>Ghanaian MoMo Auto-Refills:</strong> MTN, Telecel, &amp; AT Money</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-xl p-space-md bg-primary-container rounded-lg font-label-sm text-label-sm text-primary-fixed-dim">
+            Integrates directly via standard REST APIs, CSV imports, or POS data bridges.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DUAL VALUE PROPOSITION (SPLIT TRACKS) -->
+<section class="w-full py-space-xl bg-surface" id="dual-value">
+<div class="max-w-[1200px] mx-auto px-margin-md">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Dual Value System</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">Designed for Two Sides of the Care Equation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          A unified platform elevating pharmacy revenue and clinical oversight while bringing personal pharmacist care into every Ghanaian home.
+        </p>
+</div>
+<!-- TRACK A: FOR COMMUNITY PHARMACIES -->
+<div class="mb-space-xl">
+<div class="flex items-center gap-space-sm mb-space-lg">
+<div class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[24px]">storefront</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Track A: For Community Pharmacies &amp; Superintendents</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Maximize patient retention, eliminate stock-out leakage, and uphold strict clinical standards.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">contacts</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Customer 360 Dossiers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Full chronological timelines showing chronic refill habits, previous pharmacist notes, and adherence gaps before dispensing.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-secondary font-semibold">View Patient Timelines →</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Zero-Risk Rx Review</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Patients upload paper scripts. Pharmacists verify dosages, flag drug interactions, and authorize tamper-evident pickup PINs.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-primary font-semibold">Strict GPhC Alignment →</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Stock-Out Watchlists</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Convert out-of-stock bounce into guaranteed purchases. Patients join waitlists and receive instant SMS alerts when restocked.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-secondary font-semibold">Recapture Revenue →</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container text-tertiary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Omnichannel Careline</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pharmacists answer patient inquiries via professional WhatsApp Business &amp; SMS gateways without sharing personal phone numbers.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-tertiary font-semibold">Structured Careline →</span>
+</div>
+</div>
+</div>
+<!-- TRACK B: FOR PATIENTS & CAREGIVERS -->
+<div>
+<div class="flex items-center gap-space-sm mb-space-lg">
+<div class="p-2 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">diversity_1</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Track B: For Patients, Chronic Sufferers &amp; Caregivers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Convenient digital access to medication adherence, family health regimens, and clinical advice.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-secondary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">alarm</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Respectful Reminders</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Receive dosage prompts via WhatsApp or push notifications with zero intrusive spam. Simple 1-tap "Taken" confirmation.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-secondary font-semibold">Never Miss a Dose →</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">1-Tap MoMo Refills</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Reorder maintenance hypertension or diabetes regimens before supplies run out. Instant authorization on MTN, Telecel, or AT.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-primary font-semibold">Local Payment Ease →</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-tertiary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Ask Pharm. David</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Direct access to licensed Ghanaian pharmacists for side effect triage, pediatric dosage confirmation, and OTC recommendations.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-tertiary font-semibold">Personal Caregiver →</span>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-on-secondary-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[22px]">family_restroom</span>
+</div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold mb-space-xs">Family &amp; Elder Care</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Manage your aging parents' blood pressure medications and child's asthma inhalers from a single unified family profile.
+              </p>
+</div>
+<span class="mt-space-md font-label-sm text-label-sm text-secondary font-semibold">Proxy Management →</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: REAL GHANAIAN OPERATIONAL PROOF & METRICS -->
+<section class="w-full py-space-xl bg-primary text-on-primary relative overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-margin-md relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-bold">Field-Validated Results</span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary font-bold mt-space-xs">Proven Impact on Accra &amp; Kumasi Dispensaries</h2>
+<p class="font-body-md text-body-md text-surface-container-highest mt-space-sm">
+          Metrics gathered across partner pilot pharmacies over 180 consecutive operating days.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Metric Card 1 -->
+<div class="bg-primary-container/60 backdrop-blur-sm rounded-xl p-space-lg shadow-md flex flex-col items-center text-center">
+<span class="font-headline-xl text-headline-xl lg:text-[44px] lg:leading-[48px] font-extrabold text-secondary-container">94%+</span>
+<h4 class="font-label-lg text-label-lg text-on-primary font-bold mt-space-xs">On-Time Adherence</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-space-xs">
+            Maintained across chronic cardiovascular &amp; diabetic cohort patients.
+          </p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-primary-container/60 backdrop-blur-sm rounded-xl p-space-lg shadow-md flex flex-col items-center text-center">
+<span class="font-headline-xl text-headline-xl lg:text-[44px] lg:leading-[48px] font-extrabold text-secondary-container">3.8x</span>
+<h4 class="font-label-lg text-label-lg text-on-primary font-bold mt-space-xs">Repeat Refill Retention</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-space-xs">
+            Customers routinely refill at their home pharmacy instead of random shops.
+          </p>
+</div>
+<!-- Metric Card 3 -->
+<div class="bg-primary-container/60 backdrop-blur-sm rounded-xl p-space-lg shadow-md flex flex-col items-center text-center">
+<span class="font-headline-xl text-headline-xl lg:text-[40px] lg:leading-[48px] font-extrabold text-secondary-container">GH₵180k+</span>
+<h4 class="font-label-lg text-label-lg text-on-primary font-bold mt-space-xs">Demand Recaptured</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-space-xs">
+            Monthly stock-out bounce transformed into fulfilled patient orders.
+          </p>
+</div>
+<!-- Metric Card 4 -->
+<div class="bg-primary-container/60 backdrop-blur-sm rounded-xl p-space-lg shadow-md flex flex-col items-center text-center">
+<span class="font-headline-xl text-headline-xl lg:text-[44px] lg:leading-[48px] font-extrabold text-secondary-container">&lt; 8 mins</span>
+<h4 class="font-label-lg text-label-lg text-on-primary font-bold mt-space-xs">Avg. Triage Response</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-space-xs">
+            Rapid pharmacist turnaround on clinical dosage inquiries and scripts.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: INTEGRATION ECOSYSTEM & INFRASTRUCTURE -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin-md">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Interoperable Architecture</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">
+          Plug-and-Play With Your Current Pharmacy Workflow
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          No hardware replacement required. DavidCare integrates seamlessly via secure REST adapters, GhIPSS financial switches, and telecom rails.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Pillar 1: Existing Pharmacy Systems -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs">Dispensary Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Connect directly to sync patient profiles and catalogue availability.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">MedSys POS</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">RxWin</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">WinPharm</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Custom API</span>
+</div>
+</div>
+<!-- Pillar 2: Ghanaian Payment Rails -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">account_balance_wallet</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs">Payment Rails</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Seamless mobile money checkout with instant automated reconciliation.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">MTN MoMo</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Telecel Cash</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">AT Money</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Gh-Link Switch</span>
+</div>
+</div>
+<!-- Pillar 3: Telecommunications & Messaging -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-tertiary flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs">Communication</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Reliable delivery channels that reach every Ghanaian demographic.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">WhatsApp Cloud</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Hubtel SMS</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Firebase Push</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Transactional IVR</span>
+</div>
+</div>
+<!-- Pillar 4: Regulatory & Security Compliance -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-on-secondary-container flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs">Regulatory Gates</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Engineered specifically to conform to Ghanaian statutory healthcare standards.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Pharmacy Council</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Ghana FDA</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">Act 843 DPC</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface font-semibold shadow-sm">GPhC PIN Audit</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: TESTIMONIALS & CLINICAL ENDORSEMENT -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-margin-md">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Trusted Clinical Voices</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">
+          Empowering Ghanaian Pharmacists and Families
+        </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-stretch">
+<!-- Pharmacist Spotlight Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-md mb-space-lg">
+<img alt="Pharm. David Mensah" class="w-20 h-20 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1WTZX--SVrWgoLHjmhffSLwnBc0mVqozroRwsjxtpMzVOfwyt5R268JpdqEylLH46A6GgISv5EukNCtUloNpELRQWe_YLi9qgRDWrdyx3N7buam7ywrGOmw6R2CaXVljh-jOJz6aT0m09q72J7FTkyyd-yTSZwyKGZILEGPK9jVGD_cZK0kz-FMQ-d4fSTfaxlb4AETfsMq0oZ27y4vQYreRe58eZbqadVOZqJWpHoJCAYsiYWeadgbuus"/>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Pharm. David Mensah, MPSGH</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold">Superintendent Pharmacist • East Legon, Accra</p>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Licensed by the Pharmacy Council of Ghana</p>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed italic">
+              "Before DavidCare, we had elderly hypertensive patients forgetting refills for weeks until their blood pressure spiked. Now, our Customer 360 automatically alerts us before their medication runs out. Our patients feel taken care of without my staff spending all day playing phone tag on personal WhatsApp numbers."
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">verified</span> East Legon Dispensary</span>
+<span class="text-primary font-semibold">1,240+ Active Careline Patients</span>
+</div>
+</div>
+<!-- Patient Testimonial Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-md mb-space-lg">
+<div class="w-20 h-20 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-headline-xl">
+                AM
+              </div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Ama Mensah</h3>
+<p class="font-label-sm text-label-sm text-secondary font-bold">Caregiver &amp; Mother • East Legon</p>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Managing 2 Family Regimens on DavidCare</p>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed italic">
+              "Managing my 72-year-old mother’s daily blood pressure tablets while nursing my 5-year-old through a bacterial chest infection was overwhelming. With DavidCare, I simply took a picture of the script, Pharm. David reviewed it in 5 minutes, and it was paid via MoMo before I even left my office."
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">family_restroom</span> Proxy Care Account</span>
+<span class="text-secondary font-semibold">100% Course Adherence</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: PRICING & DEPLOYMENT TIERS -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1200px] mx-auto px-margin-md">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Transparent Partnership</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">Simple Deployment for Ghanaian Pharmacies</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Every tier includes a 30-day risk-free pilot with on-site staff training in Accra, Kumasi, and Takoradi.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch">
+<!-- Tier 1: Single Community Pharmacy -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<span class="bg-surface-container px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant font-bold">Community Branch</span>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold mt-space-sm">Single Pharmacy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Ideal for standalone independent retail pharmacies.</p>
+<div class="my-space-md">
+<span class="font-currency-display text-[32px] font-bold text-on-surface">GH₵450</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Up to 1,000 active patient profiles</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Ask Pharm. David WhatsApp Cloud channel</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Digital Rx OCR and triage approval gates</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>MTN, Telecel, &amp; AT Money settlement</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>3 staff logins (Pharmacist + Dispenser)</span>
+</li>
+</ul>
+</div>
+<a class="mt-space-lg w-full py-3 rounded-full font-label-md text-label-md text-center font-bold bg-surface-container-low text-primary hover:bg-surface-container transition-colors" href="#demo-modal">
+            Start Free 30-Day Pilot
+          </a>
+</div>
+<!-- Tier 2: Multi-Branch Chain (Featured) -->
+<div class="bg-primary rounded-2xl p-space-lg shadow-xl text-on-primary flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[11px] font-bold uppercase tracking-wider">
+            Most Popular
+          </div>
+<div>
+<span class="bg-primary-container px-3 py-1 rounded-full font-label-sm text-label-sm text-primary-fixed-dim font-bold">Multi-Dispensary</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary font-bold mt-space-sm">Pharmacy Group</h3>
+<p class="font-body-sm text-body-sm text-surface-container-highest mt-space-xs">For regional chains with 2 to 5 neighborhood branches.</p>
+<div class="my-space-md">
+<span class="font-currency-display text-[32px] font-bold text-on-primary">GH₵950</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest">/ month</span>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-surface-container-lowest">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span>Unlimited patient profiles &amp; timelines</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span>Stock-Out Demand Watchlists across branches</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span>Direct MedSys / RxWin integration adapter</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span>Multi-branch inventory search for patients</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
+<span>Dedicated on-site staff training in Accra/Kumasi</span>
+</li>
+</ul>
+</div>
+<a class="mt-space-lg w-full py-3.5 rounded-full font-label-md text-label-md text-center font-bold bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-colors shadow-md" href="#demo-modal">
+            Request Group Onboarding
+          </a>
+</div>
+<!-- Tier 3: Hospital Outpatient / Institution -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<span class="bg-surface-container px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant font-bold">Institutional</span>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold mt-space-sm">Hospital Outpatient</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Private clinics, medical centres &amp; teaching hospital OPDs.</p>
+<div class="my-space-md">
+<span class="font-currency-display text-[32px] font-bold text-on-surface">Custom</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant"> enterprise SLA</span>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Custom hospital EHR/EMR bidirectional bridge</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>DPC Act 843 enterprise compliance audit log</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Private cloud or on-premise tenant isolation</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Dedicated clinical accounts manager &amp; SLA</span>
+</li>
+</ul>
+</div>
+<a class="mt-space-lg w-full py-3 rounded-full font-label-md text-label-md text-center font-bold bg-surface-container-low text-primary hover:bg-surface-container transition-colors" href="#demo-modal">
+            Contact Clinical Solutions Desk
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: FAQ & FINAL HIGH-CONVERTING CTA -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1200px] mx-auto px-margin-md">
+<!-- FAQ Section -->
+<div class="max-w-3xl mx-auto mb-space-xl">
+<div class="text-center mb-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Superintendent Questions</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">Frequently Asked Questions</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<h3 class="font-label-lg text-label-lg text-primary font-bold flex items-center justify-between">
+<span>Do we need to change our current POS or barcode scanner setup?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              No. DavidCare is built as a non-intrusive patient layer. Your daily POS tills, cash handling, and warehouse receiving remain 100% untouched. DavidCare runs alongside your software via web or tablet.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<h3 class="font-label-lg text-label-lg text-primary font-bold flex items-center justify-between">
+<span>How do patients connect to our specific pharmacy?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              We provide personalized counter QR stands and dispatch bag stickers for your dispensary counter. When a customer scans your code or receives an automated SMS refill prompt, their app instantly connects to your pharmacy branch.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<h3 class="font-label-lg text-label-lg text-primary font-bold flex items-center justify-between">
+<span>Is patient health data protected under Ghanaian law?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Yes. DavidCare strictly adheres to the Data Protection Act, 2012 (Act 843) registered with the Data Protection Commission (DPC) Ghana. Prescription files are kept in encrypted private object storage and never shared across tenants.
+            </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<h3 class="font-label-lg text-label-lg text-primary font-bold flex items-center justify-between">
+<span>How are Mobile Money payments disbursed to our pharmacy?</span>
+<span class="material-symbols-outlined text-secondary">expand_more</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+              Payments made via MTN MoMo, Telecel Cash, or AT Money settle directly into your pharmacy's designated commercial bank account or corporate MoMo merchant till on a T+1 schedule via GhIPSS.
+            </p>
+</div>
+</div>
+</div>
+<!-- Final High-Converting Action Box -->
+<div class="w-full bg-primary rounded-3xl p-space-xl lg:p-16 text-on-primary shadow-2xl relative overflow-hidden" id="demo-modal">
+<!-- Background accents -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md shadow-md">
+<span class="material-symbols-outlined text-[32px]">local_pharmacy</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl lg:text-[40px] lg:leading-[48px] text-on-primary font-bold mb-space-sm">
+            Transform Your Pharmacy Into a Patient-Centric Healthcare Hub Today.
+          </h2>
+<p class="font-body-lg text-body-lg text-surface-container-highest max-w-2xl mb-space-lg leading-relaxed">
+            Join leading community dispensaries across Greater Accra, Ashanti, and the Western Region. Onboard in under 48 hours with on-site staff training.
+          </p>
+<!-- Interactive Request Form -->
+<form class="w-full max-w-xl bg-surface-container-lowest p-space-md rounded-2xl shadow-xl flex flex-col gap-space-sm text-left">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">Pharmacy Name</label>
+<input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Legon Care Dispensary" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">Ghana Phone (MoMo/WhatsApp)</label>
+<input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary" placeholder="+233 24 000 0000" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">City / Region</label>
+<select class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary">
+<option>Greater Accra (Accra, Tema)</option>
+<option>Ashanti (Kumasi, Obuasi)</option>
+<option>Western (Takoradi, Tarkwa)</option>
+<option>Central (Cape Coast)</option>
+<option>Eastern (Koforidua)</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-1">Current POS Software</label>
+<select class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low font-body-sm text-on-surface outline-none focus:ring-2 focus:ring-primary">
+<option>MedSys POS</option>
+<option>RxWin / WinPharm</option>
+<option>RetailMan POS</option>
+<option>QuickBooks / Custom POS</option>
+<option>No software currently</option>
+</select>
+</div>
+</div>
+<button class="w-full mt-space-xs py-3.5 rounded-full font-label-md text-label-md font-bold text-on-primary bg-primary-container hover:bg-primary transition-all duration-200 shadow-md flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+              Confirm On-Site Pharmacy Demo
+            </button>
+<p class="font-body-sm text-[11px] text-center text-outline">
+              Zero commitments. A certified DavidCare Clinical Specialist will visit your branch at your convenience.
+            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-space-xl"><div class="bg-surface-container-low py-space-md"><div class="max-w-[1200px] mx-auto px-margin-md flex flex-wrap items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">verified</span><span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Accredited Regulatory Alignment:</span></div><div class="flex flex-wrap items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xs rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-primary text-[16px]">local_pharmacy</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Pharmacy Council Ghana (GPhC) Partner</span></div><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xs rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-secondary text-[16px]">health_and_safety</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Ghana FDA Guidelines Compliant</span></div><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xs rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-tertiary text-[16px]">lock</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Data Protection Act 843 (DPC Ghana)</span></div></div></div></div><div class="max-w-[1200px] mx-auto px-margin-md py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0f5b4c
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VGyI16TlA67uwSQWUkiCBEfXqtsw9eq1pGPG7paZgqpjXKN9v9nFrhhH0zm_DIlyBy9PH_Hlp9culK9YVq-0ynJJEJ-4t9gJvbLV76N_OEhX6f4gVYuIGhcs2Y-0vIewAV-TcSGFicm6WKWrMXVMAeJsUW61r1VdO1mHFptLAckxIx0Dl9Z-XTRDpWpazQXgXNzLAoOx9J3wIUuUqJwufusj66p3390p32Dxwy_-msB2ttS-gUG93kdQA"/><span class="font-headline-md text-headline-md text-primary font-bold">DavidCare</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm leading-relaxed">The digital pharmacy engagement infrastructure for Ghana and West Africa. Connecting local dispensaries, community pharmacists, and chronic care patients through verified MoMo rails and clinical precision.</p><div class="flex flex-col gap-space-xs mt-space-sm"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span>No. 14 Boundary Road, East Legon, Accra, Ghana</span></div><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary">pin_drop</span><span>GhanaPost GPS: GA-492-1204</span></div><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span>+233 (0) 30 294 8820 / +233 24 400 9821</span></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold">Platform Solutions</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a data-path="for-pharmacies" href="#">Community Pharmacy OS</a></li><li class="hover:text-primary transition-colors"><a data-path="for-patients" href="#">Patient Mobile Regimen</a></li><li class="hover:text-primary transition-colors"><a data-path="platform-overview" href="#">Automated SMS/Voice Refills</a></li><li class="hover:text-primary transition-colors"><a data-path="integration-ecosystem" href="#">Ghana POS &amp; MoMo APIs</a></li><li class="hover:text-primary transition-colors"><a data-path="compliance-and-security" href="#">Digital Rx Authentication</a></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold">Integrations &amp; Networks</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>MTN Mobile Money Direct</li><li>Telecel Cash Health Pay</li><li>AT Money Healthcare Gate</li><li>Apex Rx &amp; WinPharm POS</li><li>GH-Interbank GhIPSS Switch</li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-on-surface font-bold">Governance &amp; Support</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a data-path="compliance-and-security" href="#">Regulatory Filings</a></li><li class="hover:text-primary transition-colors"><a data-path="compliance-and-security" href="#">Data Protection (DPC Act 843)</a></li><li class="hover:text-primary transition-colors"><a data-path="compliance-and-security" href="#">Pharmacovigilance Reporting</a></li><li class="hover:text-primary transition-colors"><a data-path="request-demo" href="#">Clinical Onboarding Desk</a></li><li class="hover:text-primary transition-colors"><a data-path="patient-app" href="#">24/7 Pharmacist Hotline</a></li></ul></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-outline">© 2025 DavidCare Technologies Limited. Licensed by the Pharmacy Council of Ghana. All rights reserved.</p><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Terms of Service</a><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-primary transition-colors" href="#">Clinical Safety</a></div></div></div></footer></body></html>
